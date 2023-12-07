@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: #095228;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#jeux1{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+#jeux1 div {
+    display: flex;
+    margin: auto;
+    padding: 10px ;
+}
+body>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#imagejeux{
+    text-align: center;
+    width: 75%;
+}
+
+ol {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+ol>li{
+    margin: 0 20px
+}
+
+#imagejeux img{
+    width: 75%;
+}
+#reponssssse{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+#reponssssse>div{
+    padding: 10%;
+}

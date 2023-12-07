@@ -2,26 +2,30 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Game Écologique</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<header>
-    <p>je suis batman</p>
-</header>
-<footer>
-</footer>
-<script>
-    document.addEventListener('scroll', function() {
-        var header = document.querySelector('header');
-        var scrollPosition = window.scrollY;
-        var scrollThreshold = 200;
-        if (scrollPosition > scrollThreshold) {
-            header.style.backgroundColor = '#00FF00'; /* Vert */
-        } else {
-            header.style.backgroundColor = '#888888'; /* Gris par défaut */
-        }
-    });
-</script>
+<div class="container">
+    <header>
+        <h1>Escape Game Écologique</h1>
+    </header>
+    <main>
+        <!-- Contenu principal du jeu -->
+        <section id="intro">
+            <h2>Bienvenue dans l'Escape Game Écologique</h2>
+            <p>Texte d'introduction...</p>
+            <button id="startBtn">Commencer</button>
+        </section>
+
+        <!-- Autres sections du jeu -->
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Escape Game Écologique. Tous droits réservés.</p>
+    </footer>
+</div>
+<script src="index.js"></script>
 </body>
-</html>
+

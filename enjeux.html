@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/enjeux.css">
+    <title>Enjeux</title>
+</head>
+<body>
+<header>
+</header>
+<main>
+    <div class="divh1">
+        <h1>Quels sont nos enjeux ?</h1>
+    </div>
+    <div class="lign">
+        <h1> </h1>
+    </div>
+
+    <div class="logo-holder">
+        <div class="bg"></div>
+        <div class="bar"></div>
+        <div class="bar fill1"></div>
+        <div class="bar fill2"></div>
+        <div class="bar fill3"></div>
+        <div class="bar fill4"></div>
+        <div class="bar fill1"></div>
+        <div class="bar fill5"></div>
+        <div class="bar fill6"></div>
+        <div class="bar"></div>
+    </div>
+    <p class="divp"> Le changement climatique est une réalité qui n'est plus à démontrer. Les scientifiques sont formels : "les activités humaines, principalement par le biais des émissions de gaz à effets de serre, ont sans équivoque provoqué le réchauffement de la planète". Malgré ce que l'on pense, de nombreuses solutions existent et sont efficaces pour faire bouger les choses dans le bon sens.</p>
+
+
+
+
+    <img class="img1" src="images/image1.jpg">
+    <div class="divp"><p> Les enjeux majeurs auquels nous devons faire face sont principalement autour de notre mission : Œuvrer pour proposer des solutions durables afin de réduire les émissions de gaz à effet de serre. Mais aussi, faire le tri entre fausses informations et vraies solutions pour le climats, au travers de données chiffrées et de sources fiables.</p></div>
+</main>
+<footer>
+</footer>
+<script>
+    document.addEventListener('scroll', function() {
+        var header = document.querySelector('header');
+        var scrollPosition = window.scrollY;
+        var scrollThreshold = 200;
+        if (scrollPosition > scrollThreshold) {
+            header.style.backgroundColor = '#00FF00'; /* Vert */
+        } else {
+            header.style.backgroundColor = '#888888'; /* Gris par défaut */
+        }
+    });
+</script>
+</body>
+</html>
