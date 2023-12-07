@@ -1,12 +1,17 @@
 header {
-    background-color: #888888; /* Gris par défaut */
+    background-color: #dbdbdb; /* Gris par défaut */
     padding: 20px;
     color: white;
     text-align: center;
     transition: background-color 0.5s ease; /* Transition de couleur en douceur */
 }
 
-h1{
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+div h1{
     padding:20px;
     color: white;
     font-size: 16px;
@@ -20,6 +25,23 @@ div p{
     font-size:12px;
 }
 
-img{
+.img1{
     border-radius:5px;
+    height: 55%;
+    width: 35%;
+    display: flex;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+
+    }
 }
