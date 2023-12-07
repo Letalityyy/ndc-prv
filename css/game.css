@@ -19,14 +19,22 @@ body {
     transform: translate3d(0, 0, 0);
     position: relative;
     border: 2px solid #fff;
-    background: linear-gradient(to bottom, #00FF00, #006400); /* Dégradé de vert moins foncé (#00FF00) en haut à vert foncé (#006400) en bas */
+    background: linear-gradient(to bottom, #00FF00, #006400) rgba(255, 255, 255, 0.1); /* Dégradé de vert moins foncé (#00FF00) en haut à vert foncé (#006400) en bas avec fond blanc légèrement transparent */
     width: 25%;
     height: 100vh;
     min-height: 600px;
     color: #fff;
     overflow: hidden;
-    transition: width 0.5s ease;
+    transition: background 0.3s ease; /* Ajout d'une transition sur la propriété background */
 
+    .tl-content img {
+        position: absolute;
+    bottom: 100%;
+        width: 75%;
+        height: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     &:before, &:after {
         transform: translate3d(0, 0, 0);
         content: '';
@@ -62,7 +70,12 @@ body {
         }
 
         .tl-bg {
-            filter: grayscale(0);
+
+            background-position: top center;
+        }
+        &:hover {
+            width: 30% !important;
+            ]
         }
     }
 }
@@ -83,6 +96,7 @@ body {
         font-size: 1.44rem;
         font-weight: normal;
     }
+
 }
 
 .tl-year {
