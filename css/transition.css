@@ -155,3 +155,6 @@ body {
     from, to { width: 0.2em; }
     33% { width: 2.4em; }
 }
+#loading{
+    display: none   ;
+}
