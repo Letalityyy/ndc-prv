@@ -1,4 +1,57 @@
-nav {
-    display: flex;
-    align-items: center;
+body{
+
 }
+
+
+nav {
+    background-color: green;
+    padding: 1.4vw;
+    font-size: 1.4vw;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin-left: 40%;
+}
+
+.enLigne {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8vw;
+}
+
+.encolone {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0vw;
+}
+
+section div {
+    max-width: 50%;
+
+}
+section{
+    margin: 1.9vw;
+    margin-left: 25%;
+}
+article{
+    max-width: 40%;
+}
+img{
+    width: 25%;
+}
+
+.background {
+    background-color: green;
+    border-radius: 10px;
+    padding: 3% 3%;
+    box-shadow: 0px 1px 2px 1px green;
+}
+
+
+
+
+
