@@ -23,10 +23,6 @@ body>div{
     flex-direction: column;
     align-items: center;
 }
-#imagejeux{
-    text-align: center;
-    width: 75%;
-}
 
 ol {
     margin: auto;
@@ -38,18 +34,21 @@ ol>li{
     margin: 0 20px
 }
 
-#imagejeux img{
-    width: 75%;
-}
 #reponssssse{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 5%;
 }
 #reponssssse>div {
     padding: 10%;
 }
 input:checked + label>img{
     filter: invert(100%);
+}
+input{
+    display: none;
+}
+#reponssssse img{
+    width: 100px;
 }
