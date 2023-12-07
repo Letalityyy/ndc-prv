@@ -1,62 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="css/transi.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/transition.css">
+  <title>Title</title>
 </head>
 <body>
-<div class="hexagon" aria-label="Animated hexagonal ripples">
+  <header>
+  </header>
+  <div class="hexagon" aria-label="Animated hexagonal ripples">
     <div class="hexagon__group">
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
     </div>
     <div class="hexagon__group">
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
     </div>
     <div class="hexagon__group">
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
     </div>
     <div class="hexagon__group">
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
     </div>
     <div class="hexagon__group">
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
     </div>
     <div class="hexagon__group">
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
-        <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
+      <div class="hexagon__sector"></div>
     </div>
-</div>
-<p aria-label="Loading">Loading</p>
+  </div>
+  <p aria-label="Loading">Loading</p>
 
+  <!-- Paragraphe avec l'identifiant "loading" -->
+  <p id="loading" aria-label="Loading"></p>
+
+  <!-- Le bouton qui sera ajouté après 3 secondes -->
+  <div id="buttonContainer"></div>
+
+  <script>
+    // Fonction pour créer le bouton et le remplacer après 3 secondes
+    function replaceLoadingWithButton() {
+      // Récupère le paragraphe et le bouton
+      var loadingParagraph = document.getElementById('loading');
+      var buttonContainer = document.getElementById('buttonContainer');
+
+      // Masque le paragraphe
+      loadingParagraph.style.display = 'none';
+
+      // Crée le bouton
+      var button = document.createElement('a');
+      button.href = 'game.html'; // Assurez-vous que votre page s'appelle "game2.html"
+      button.innerText = 'Game ';
+      button.classList.add('button'); // Ajoutez des classes CSS au besoin
+
+      // Ajoute le bouton à la place du paragraphe
+      buttonContainer.appendChild(button);
+    }
+
+    // Appelle la fonction après 3 secondes
+    setTimeout(replaceLoadingWithButton, 3000);
+  </script>
 </body>
 </html>

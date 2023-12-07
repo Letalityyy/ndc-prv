@@ -47,6 +47,9 @@ ol>li{
     justify-content: space-around;
     width: 50%;
 }
-#reponssssse>div{
+#reponssssse>div {
     padding: 10%;
+}
+input:checked + label>img{
+    filter: invert(100%);
 }
