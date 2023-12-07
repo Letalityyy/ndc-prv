@@ -66,3 +66,11 @@ img {
     position: relative;
     right:  22%;
 }
+.full{
+    max-width: 100%;
+}
+
+#terre{
+    position: relative;
+    right: 12%;
+}
