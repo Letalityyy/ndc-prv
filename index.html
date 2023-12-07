@@ -7,11 +7,21 @@
 </head>
 <body>
 <header>
-<p>je suis batman</p>
+    <p>je suis batman</p>
 </header>
-
 <footer>
-
 </footer>
+<script>
+    document.addEventListener('scroll', function() {
+        var header = document.querySelector('header');
+        var scrollPosition = window.scrollY;
+        var scrollThreshold = 200;
+        if (scrollPosition > scrollThreshold) {
+            header.style.backgroundColor = '#00FF00'; /* Vert */
+        } else {
+            header.style.backgroundColor = '#888888'; /* Gris par défaut */
+        }
+    });
+</script>
 </body>
 </html>
