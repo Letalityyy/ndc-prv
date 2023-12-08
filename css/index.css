@@ -238,6 +238,11 @@ iframe{
         text-align: right;
         float: right;
     }
+    .actus > div > a > p{
+        width: 50%;
+        float: right;
+
+    }
     .act{
         position: absolute;
         right: 20%;
@@ -263,7 +268,8 @@ iframe{
         width: 100%;
     }
     header > div{
-        margin-right: 4%;
+        height: 100%;
+        padding: 3%;
     }
 }
 @media (min-width: 1034px){
