@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <audio id="audio1" src="sons/index1.mp3"></audio>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
     <title>Acceuil</title>
@@ -25,7 +26,7 @@
         <hr />
     </article>
     <article class="twoarticle">
-        <button class="boutton2" type="button2" >READ</button>
+        <button class="boutton2" type="button2" onclick=action1()>READ</button>
     </article>
     <article class="firstarticle">
         <p>🔐 Prêt à relever un défi passionnant depuis le confort de votre chez-vous? Plongez dans l'aventure captivante d'Ecoscape, notre escape game en ligne époustouflant! Résolvez des énigmes et testez vos compétences pour vous échapper victorieux. Une expérience immersive qui vous sensibilise sur le réchauffement climatique. Rejoignez Ecoscape maintenant! 🔓✨</p>
@@ -33,7 +34,7 @@
     <article class="twoarticle">
         <button class="boutton" type="button" onclick="window.location.href='./game.html'">C'est Partie!</button>
     </article>
-    <article class="titre_site2"id="a2">
+    <article class="titre_site2"id="a1">
         <p>Articles disponibles</p>
     </article>    
     <article class="actus" id="actus">
@@ -55,7 +56,7 @@
         </div>
     </article>
 </div>
-<article class="titre_site2"id="a2">
+<article class="titre_site2"id="a3">
     <p>Images</p>
 </article>
 <article class="lesimages">
@@ -109,4 +110,11 @@
         </div>
 </footer>
 </body>
+<script>
+    function action1() {
+        var audio1 = document.getElementById("audio1");
+        audio1.play();
+
+    }
+</script>
 </html>
