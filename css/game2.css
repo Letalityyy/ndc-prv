@@ -44,11 +44,11 @@ ol>li{
     padding: 10%;
 }
 input:checked + label>img{
-    filter: invert(100%);
-}
-input{
-    display: none;
+    filter: hue-rotate(-120deg);
 }
 #reponssssse img{
     width: 100px;
+}
+#pausse{
+    display: none;
 }
