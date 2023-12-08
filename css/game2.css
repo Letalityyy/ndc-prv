@@ -65,3 +65,16 @@ svg:hover {
 article{
     padding: 60px;
 }
+#btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#btn:hover {
+    background-color: #095228;
+    color: #ecf0f1;
+}

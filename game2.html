@@ -10,7 +10,7 @@
   <header>
     <a href="index.html">Accueil</a>
     <div>
-      <input type="range" id="volume" name="volume" min="0" max="11" />
+      <input type="range" id="volume" name="volume" min="20" max="40" oninput="updateTextSize(this.value)"/>
       <label for="volume">Taille texte</label>
     </div>
     <a href="game.html">Retour</a>
@@ -74,7 +74,7 @@
       </div>
     </article>
     <form>
-      <input type="button" value="Validée" onclick="checkAndRedirect()"/>
+      <input type="button" value="Validée" onclick="checkAndRedirect()" id="btn"/>
     </form>
   </div>
 </body>

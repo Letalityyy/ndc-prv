@@ -2,30 +2,104 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape Game Écologique</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Title</title>
 </head>
 <body>
-<div class="container">
     <header>
-        <h1>Escape Game Écologique</h1>
+        <div>
+            <a href="#footer">Contacts</a>
+        </div>
+        <div class="act">
+            <a href="#a2">Actualités</a>
+        </div>
+        <div>
+            <a href="#c">Carte</a>
+        </div>
     </header>
-    <main>
-        <!-- Contenu principal du jeu -->
-        <section id="intro">
-            <h2>Bienvenue dans l'Escape Game Écologique</h2>
-            <p>Texte d'introduction...</p>
-            <button id="startBtn">Commencer</button>
-        </section>
-
-        <!-- Autres sections du jeu -->
-
-    </main>
-    <footer>
-        <p>&copy; 2023 Escape Game Écologique. Tous droits réservés.</p>
-    </footer>
+    <article class="titre_site">
+        <div>Escapator</div>
+        <hr />
+    </article>
+    <article class="firstarticle">
+        <p>🔐 Prêt à relever un défi passionnant depuis le confort de votre chez-vous? Plongez dans l'aventure captivante d'Escapator, notre escape game en ligne époustouflant! Résolvez des énigmes et testez vos compétences pour vous échapper victorieux. Une expérience immersive qui vous sensibilise sur le réchauffement climatique. Rejoignez Escapator maintenant! 🔓✨</p>
+    </article>
+    <article class="twoarticle">
+        <button class="boutton" type="button" onclick="window.location.href='./game.html'">C'est Partie!</button>
+    </article>
+    <article class="titre_site2"id="a2">
+        <p>Articles disponibles</p>
+    </article>    
+    <article class="actus" id="actus">
+        <div>
+            <img src="./images/imgenv1.jpg">
+            <a href="https://www.lepoint.fr/environnement/"><p>Le point: dernier point environnemental</p></a>
+        </div>
+        <div>
+            <img src="./images/pollution.jpg">
+            <a href="https://www.un.org/fr/chronicle/article/les-effets-du-rechauffement-climatique-sur-la-sante-les-pays-en-developpement-sont-les-plus"><p>Les effets du rechaufement climatique impact le plus les pays developper.</p></a>
+        </div>
+        <div>
+            <img src="./images/imagedessert.jpg">
+            <a href="https://lejournal.cnrs.fr/articles/le-rechauffement-climatique-en-france-sannonce-pire-que-prevu"><p>CRNS: Le réchauffement climatique impact le plus la France</p></a>
+        </div>
+        <div>
+            <img src="./images/image incendie.jpg">
+            <a href="https://www.ouest-france.fr/environnement/rechauffement-climatique/"><p>Ouest-France: Le rechauffement climatique augmente le nombre d'incendie.</p></a>
+        </div>
+    </article>
 </div>
-<script src="index.js"></script>
-</body>
+<article class="titre_site2"id="a2">
+    <p>Images</p>
+</article>
+<article class="lesimages">
+    <div class="image-container">
+        <img src="./images/imageours.jpg" width="100%" height="100%">
+        <div class="overlay-text">
+            Le rechaufement climatique tue les ours polaire.
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="./images/imgarbre.jpg" width="100%"height="100%">
+        <div class="overlay-text">
+            Le rechaufement climatique éteint de nombreuses d'espèces d'arbre.
+        </div>
+    </div>
+</article>
+<article class="titre_site2"id="a2">
+    <p>Carte</p>
+</article>  
+<article>
+    <div class="encadrer" id="c"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185481.85404011208!2d3.429499586718748!3d43.4156097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b13558fcca439f%3A0x7dba17f133a21189!2sIUT%20Montpellier%2FS%C3%A8te%20-%20Dep.%20Info%20%26%20GEA!5e0!3m2!1sfr!2sfr!4v1701993359330!5m2!1sfr!2sfr" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</article>
 
+<footer id="footer">
+    <div class ="footerl1">
+        <div>
+            <h3 class="under">Un escape game unique</h3>
+            <p> </p>
+            Un escape game comme du jamais vu sur le web!
+        </div>
+            <span class="ligne"></span>
+        <div>
+            <h3 class="under">Adresse</h3>
+            <a class="lien" href="https://www.google.com/maps/place/IUT+Montpellier%2FSète+-+Dep.+Info+%26+GEA/@43.4156097,3.7166743,19z/data=!3m1!4b1!4m6!3m5!1s0x12b13558fcca439f:0x7dba17f133a21189!8m2!3d43.4156097!4d3.7178907!16s%2Fg%2F11rqhcbbs3?entry=ttu" target="_blank">1511 Quai des Moulins, 34200 Sète</a></p>
+        </div>
+            <span class="ligne"></span>
+        <div>
+            <h3 class="under">Téléphone</h3>
+            <a href="tel:0499047386" class="bouton">04 99 04 73 86</a></p>
+        </div>
+            <span class="ligne"></span>
+        <div>
+            <h3 class="under">Nouvelles versions</h3>
+            <p>Pensez a vous connectez souvent pour décourir les nouvelles versions de l'escape game</p>
+        </div>
+        </div>
+            <span class="derniere_ligne"></span>
+        <div class="credit">
+        <p>© [2023] Escapator. Tous droits réservés.</p>
+        </div>
+</footer>
+</body>
+</html>
