@@ -23,6 +23,47 @@ header {
     background-color: #dbdbdb;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
+    flex: 1;
+}
+.container {
+    max-width: 1200px; /* Ajustez selon vos besoins */
+    margin: 0 auto; /* Centre le contenu dans la page */
+    overflow: hidden; /* Clearfix pour contenir les images flottantes */
+}
+
+.left-image {
+    float: left;
+    margin-right: 20px; /* Ajoutez une marge entre les images si nécessaire */
+    margin-left: 100px;
+}
+
+.textLeft{
+    margin-right:500px;
+    text-align: justify;
+}
+
+.textRight{
+    margin-left: 500px;
+    text-align: justify;
+    background-color: lightblue;
+}
+
+#imageMid{
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+}
+
+.right-image {
+    float: right;
+    margin-right:100px;
+
+}
+
+h2{
+    text-align: center;
+    padding: 20px
 }
 
 body{
@@ -63,20 +104,34 @@ div p {
     display:flex;
 }
 
-.img2{
+.img{
     border-radius:5px;
     display: flex;
     margin: 0 auto;
-    max-width: 100%
+    max-width: 100%;
+    height: 55%;
+    width: 35%;
 }
 
-.img1{
+.imgStats{
+    border-radius:5px;
+    height: 500px;
+    width: 850px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    padding:30px;
+}
+
+
+#AffichePub{
     border-radius:5px;
     height: 55%;
     width: 35%;
     display: flex;
     margin: 0 auto;
-    max-width: 100%
+    max-width: 100%;
+    padding:30px;
 }
 
 @media screen and (max-width: 800px){
