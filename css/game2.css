@@ -3,7 +3,7 @@ body {
 }
 header {
     background-color: #095228;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,4 +55,13 @@ input:checked + label>img{
 header a{
     text-decoration: none;
     color: white;
+}
+a:hover{
+    border: solid 2px white;
+}
+svg:hover {
+    filter: hue-rotate(-160deg);
+}
+article{
+    padding: 60px;
 }
