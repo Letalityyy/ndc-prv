@@ -18,7 +18,7 @@ function checkAndRedirect() {
     const V6 = document.getElementById('V6');
             if (V2.checked && V3.checked && V6.checked) {
                 // Redirigez l'utilisateur vers une nouvelle page
-                window.location.href = '../transifin.html';
+                window.location.href = 'transifin.html';
             } else {
                 // Rechargez la page actuelle
                 location.reload();

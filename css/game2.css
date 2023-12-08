@@ -74,8 +74,6 @@ article{
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
-/* Styles du bouton lorsqu'il est en survol */
 #btn:hover {
     background-color: #095228;
     color: #ecf0f1;
