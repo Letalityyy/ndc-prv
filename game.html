@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/game.css">
+    <script rel="script" src="js/game.js"></script>
 </head>
 <body>
 
+<button onclick="checkValues()">Vérifier les valeurs</button>
+<button id="hiddenButton" style="display:none;">Mon Bouton</button>
 
 <section id="timeline">
 
@@ -18,7 +21,7 @@
 
 
         <div class="tl-content">
-            <img src="images/img.png" alt="Petite Image 1">
+            <img id="local" src="images/local.jpg" alt="Petite Image 1">
 
 
             <h1>Lorem ipsum dolor sit</h1>
@@ -36,7 +39,7 @@
 
 
         <div class="tl-content">
-            <img src="images/img.png" alt="Petite Image 1">
+            <img id="vinted" src="images/vinted.png" alt="Petite Image 1">
             <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
             <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
         </div>
@@ -52,7 +55,7 @@
 
 
         <div class="tl-content">
-            <img src="images/img.png" alt="Petite Image 1">
+            <img id="viande" src="images/viande.jpg" alt="Petite Image 1">
             <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
             <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
         </div>
@@ -68,10 +71,14 @@
 
     <p>1</p>
         <div class="tl-content">
-            <img src="images/img.png" alt="Petite Image 1">
+            <img id="renouvelable" src="images/renouvelable.jpg" alt="Petite Image 1">
             <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
             <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+
+
         </div>
+
+
 
     </div>
 </section>

@@ -23,10 +23,6 @@ body>div{
     flex-direction: column;
     align-items: center;
 }
-#imagejeux{
-    text-align: center;
-    width: 75%;
-}
 
 ol {
     margin: auto;
@@ -38,15 +34,25 @@ ol>li{
     margin: 0 20px
 }
 
-#imagejeux img{
-    width: 75%;
-}
 #reponssssse{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 5%;
 }
-#reponssssse>div{
+#reponssssse>div {
     padding: 10%;
+}
+input:checked + label>img{
+    filter: hue-rotate(-120deg);
+}
+#reponssssse img{
+    width: 100px;
+}
+#pausse{
+    display: none;
+}
+header a{
+    text-decoration: none;
+    color: white;
 }
