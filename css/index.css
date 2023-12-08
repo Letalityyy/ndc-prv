@@ -40,7 +40,7 @@ header > div > a{
     color: white;
 }
 header > div{
-    margin-right: 13% ;
+    margin-right: 11% ;
     height: 100%;
 }
 .titre_site{
@@ -88,6 +88,24 @@ header > div{
     width: 164px;
     height: 37px;
     right: 43.8%;
+    -webkit-transition: width 0.5s;
+    background-color:#11640e;
+}
+.boutton2 {
+    position: absolute;
+    text-align: center;
+    right: 49.5%;
+    height: 45px;
+    width: 45px;
+    background-color: #259121;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+.boutton2:hover{
+    width: 47px;
+    height: 47px;
+    right: 50%;
     -webkit-transition: width 0.5s;
     background-color:#11640e;
 }
@@ -244,8 +262,8 @@ iframe{
     .lesimages > div{
         width: 100%;
     }
-    header > div > a{
-        margin-right: 8%;
+    header > div{
+        margin-right: 4%;
     }
 }
 @media (min-width: 1034px){

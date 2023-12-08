@@ -1,3 +1,4 @@
+
 function checkValues() {
 var input1 = document.getElementById('number-input').value;
 var input2 = document.getElementById('number-input2').value;

@@ -4,6 +4,11 @@ nav {
     font-size: 1.4vw;
 }
 
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
 li {
     list-style: none;
 }
@@ -55,22 +60,26 @@ img {
     padding: 3% 3%;
     box-shadow: 0px 1px 2px 1px green;
 }
-.centre{
+
+.centre {
     margin-left: 40%;
-    
+
 }
-.centre article{
+
+.centre article {
     max-width: 60%;
 }
-#co{
+
+#co {
     position: relative;
-    right:  22%;
+    right: 22%;
 }
-.full{
+
+.full {
     max-width: 100%;
 }
 
-#terre{
+#terre {
     position: relative;
     right: 12%;
 }
@@ -79,7 +88,7 @@ img {
 
 
 footer>div {
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
     justify-content: center;
     width: 100%;
 }
@@ -90,7 +99,7 @@ footer ul {
 
 footer li {
     margin-bottom: 2vw;
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
 }
 
 footer .titre {
@@ -116,4 +125,68 @@ footer a:hover {
 
 footer p {
     font-size: 0.7vw;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex:1;
+    }
+
+    footer {
+        margin: 15px 0px 15px 0px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    nav ul {
+        margin-left: 30%;
+    }
+
+    #co {
+        margin-right: 1.2vw;
+    }
+
+
+    footer>div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    footer .titre {
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .v {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    
+
+
+
 }
