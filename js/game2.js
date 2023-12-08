@@ -2,13 +2,19 @@ function toggleSVG() {
     const svgContainer = document.querySelector('.svg-container');
     const svg1 = svgContainer.querySelector('.svg1');
     const svg2 = svgContainer.querySelector('.svg2');
+    const audio = document.getElementById('audio');
 
     if (svg1.style.display === 'block') {
         svg1.style.display = 'none';
         svg2.style.display = 'block';
+        // Démarrez le son
+        audio.play();
     } else {
         svg1.style.display = 'block';
         svg2.style.display = 'none';
+        // Arrêtez le son
+        audio.pause();
+        audio.currentTime = 0; // Rembobinez le son au début
     }
 }
 function checkAndRedirect() {

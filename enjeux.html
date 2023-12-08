@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <audio id="audio1" src="sons/enjeux1.mp3"></audio>
+    <audio id="audio2" src="sons/enjeux2.mp3"></audio>
+    <audio id="audio3" src="sons/enjeux3.mp3"></audio>
+    <audio id="audio4" src="sons/enjeux4.mp3"></audio>
+    <audio id="audio5" src="sons/enjeux5.mp3"></audio>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/enjeux.css">
     <title>Enjeux</title>
@@ -35,7 +40,7 @@
         </div>
         <p class="button"> <a href="#imageCible">Statistiques</a></p>
     </div>
-    <button id="button1" onclick="actionLocal()">Play son</button>
+    <button id="button1" onclick="action1()">Play son</button>
     <div class="divp"><p> Les enjeux majeurs auquels nous devons faire face sont principalement autour de notre mission
         : Œuvrer pour proposer des solutions durables afin de réduire les émissions de gaz à effet de serre. Mais aussi,
         faire le tri entre fausses informations et vraies solutions pour le climats, au travers de données chiffrées et
@@ -50,19 +55,19 @@
     <div>
 
         <h2> Démêler le vrai du faux : Les fausses informations sur le réchauffement climatique et les solutions à envisager</h2>
-        <button id="button2" onclick="actionLocal()">Play son</button>
+        <button id="button2" onclick="action2()">Play son</button>
         <p class="textLeft">Le réchauffement climatique est une réalité indéniable qui menace notre planète. Cependant, un flot constant de fausses informations circule, semant la confusion et entravant les efforts pour lutter contre ce phénomène. Il est crucial de discerner la vérité des mythes afin d'adopter des solutions efficaces et durables.</p>
 
         <h2>Mythe 1 : "Le réchauffement climatique n'est pas d'origine humaine"</h2>
-        <button id="button3" onclick="actionLocal()">Play son</button>
+        <button id="button3" onclick="action3()">Play son</button>
         <p class="textRight">Certains persistent à nier la responsabilité humaine dans le réchauffement climatique, arguant que les variations naturelles sont à l'origine des changements observés. Cependant, la communauté scientifique mondiale s'accorde à dire que les activités humaines, telles que les émissions de gaz à effet de serre, contribuent de manière significative à ce phénomène. Il est impératif de reconnaître cette réalité pour prendre des mesures appropriées.</p>
 
         <h2>Mythe 2 : "Le changement climatique est bénéfique"</h2>
-        <button id="button4" onclick="actionLocal()">Play son</button>
+        <button id="button4" onclick="action4()">Play son</button>
         <p class="textLeft">Certains prétendent que le réchauffement climatique pourrait avoir des aspects positifs, comme l'augmentation des rendements agricoles dans certaines régions. Cependant, les effets dévastateurs, tels que les catastrophes naturelles accrues, la montée du niveau de la mer et la perte de biodiversité, l'emportent largement sur les prétendus bénéfices. Il est essentiel de reconnaître les dangers associés au changement climatique.</p>
 
         <h2>Mythe 3 : "Les énergies fossiles sont inoffensives"</h2>
-        <button id="button5" onclick="actionLocal()">Play son</button>
+        <button id="button5" onclick="action5()">Play son</button>
         <p class="textRight">Certains secteurs de l'industrie soutiennent que l'utilisation des énergies fossiles n'a que peu d'impact sur le climat. Cependant, il est scientifiquement prouvé que les émissions de CO2 provenant de la combustion des énergies fossiles contribuent de manière significative au réchauffement climatique. Promouvoir les énergies renouvelables et réduire notre dépendance aux combustibles fossiles sont des étapes cruciales.</p>
     </div>
 
@@ -79,6 +84,31 @@
 <footer>
 </footer>
 <script>
+    function action1() {
+        var audio1 = document.getElementById("audio1");
+        audio1.play();
+    }
+
+    function action2() {
+        var audio2 = document.getElementById("audio2");
+        audio2.play();
+    }
+
+    function action3() {
+        var audio3 = document.getElementById("audio3");
+        audio3.play();
+    }
+
+    function action4() {
+        var audio4 = document.getElementById("audio4");
+        audio4.play();
+    }
+
+    function action5() {
+        var audio5 = document.getElementById("audio5");
+        audio5.play();
+    }
+
     document.addEventListener('scroll', function () {
         var header = document.querySelector('header');
         var scrollPosition = window.scrollY;
