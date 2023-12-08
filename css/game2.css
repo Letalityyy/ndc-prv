@@ -3,7 +3,7 @@ body {
 }
 header {
     background-color: #095228;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,4 +55,28 @@ input:checked + label>img{
 header a{
     text-decoration: none;
     color: white;
+}
+a:hover{
+    border: solid 2px white;
+}
+svg:hover {
+    filter: hue-rotate(-160deg);
+}
+article{
+    padding: 60px;
+}
+#btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Styles du bouton lorsqu'il est en survol */
+#btn:hover {
+    background-color: #095228;
+    color: #ecf0f1;
 }
