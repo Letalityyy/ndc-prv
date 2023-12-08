@@ -2,12 +2,34 @@ body {
     font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.75;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start; /* Ajustez align-items pour placer le contenu plus haut */
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 999;
+}
+a > #hiddenButton {
+    position: absolute;
+    z-index: 999;
+    bottom: 10px; /* Ajustez la position basse selon vos préférences */
 }
 
 #timeline {
     display: flex;
     background-color: #006400;
-
     &:hover {
         .tl-item {
             width: 23.3333%;
@@ -144,4 +166,15 @@ body {
 #number-input {
     width: 50px; /* Ajustez la largeur selon vos besoins */
     text-align: center;
+}
+#local{
+    height: 100%;
+    bottom: 100%;
+    width: 100%;
+}
+#local1{
+    top: 40%;
+}
+#renouvelable2{
+    top: 40%;
 }
