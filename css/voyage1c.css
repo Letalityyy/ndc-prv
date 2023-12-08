@@ -53,6 +53,13 @@ h2 { font-size: 3rem; }
 body > div > p{
 right:  0px;
 }
+#byciclette{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 25%;
+}
 
 /* effet machine à écrire + animation CSS (SPECIAL) */
 /*
