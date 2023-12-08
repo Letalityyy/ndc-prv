@@ -1,6 +1,307 @@
-body > article  {
-    text-align: left;
-    margin: 0px 20% 5% 20%;
-    padding:2% 2% 2% 2%;
-    border:medium solid grey;
+.actus{
+    display: flex;
+    flex-direction: row;
+}
+
+.actus > div >a{
+    position: absolute;
+    bottom: 15%;
+    text-align:center ;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+    border: none;
+}
+.actus > div >a:hover{
+    color: darkgreen;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #62f445, #259121);
+    color: #FFF;
+    height: 3rem;
+    padding: 1em;
+    position: relative; /* Ajoutez cette ligne */
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+html, body{
+    margin: 0;
+}
+header > div > a{
+    text-decoration: none;
+    position: absolute;
+    top:40%;
+    color: white;
+}
+header > div{
+    margin-right: 13% ;
+    height: 100%;
+}
+.titre_site{
+    text-align: center;
+    font-size: 35px;
+    color: #259121;
+    font-family: monospace;
+    font-weight: bold;
+}
+.titre_site2{
+    text-align: center;
+    font-size: 30px;
+    color: #259121;
+    font-family: monospace;
+    font-weight: bold;
+}
+.titre_site > hr{
+    width: 55%;
+    height: 4px;
+    background-color: #259121;
+
+}
+.firstarticle{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.twoarticle{
+    position: relative;
+    margin-bottom: 100px;
+}
+.boutton {
+    position: absolute;
+    text-align: center;
+    right: 44%;
+    height: 35px;
+    width: 160px;
+    background-color: #259121;
+    border-radius: 4px;
+    color: white;
+}
+.boutton:hover{
+    width: 164px;
+    height: 37px;
+    right: 43.8%;
+    -webkit-transition: width 0.5s;
+    background-color:#11640e;
+}
+footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.71);
+    padding: 50px 50px 10px 50px;
+}
+footer:hover{
+    background-color: rgb(68, 68, 68);
+}
+.footer .imgfooter {
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+.bouton{
+    color: white;
+    text-decoration: none;
+    margin-top: 50px;
+    text-align: center;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+.lien{
+    color: white;
+    text-decoration: none;
+}
+.under{
+    text-decoration: underline #259121;
+}
+hr{
+    border-color: #62f445;
+}
+iframe{
+    margin-bottom: 5%;
+    margin-left:5% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:3%;
+}
+.encadrer{
+    padding: 2px;
+}
+.lesimages {
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Couleur du texte */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+
+.image-container:hover .overlay-text {
+    opacity: 0;
+}
+
+@media (max-width: 1034px) {
+    .footerl1{
+        flex-direction: column;
+    }
+    .ligne,.derniere_ligne{
+        border-bottom: 1px solid white;
+        display: block;
+        height: 40px;
+        margin: 0 20px;
+    }
+    .imgfooter{
+        margin: 0px  5px 0px 10px ;
+    }
+    .credit{
+        text-align: center;
+    }
+    .actus{
+        flex-direction: column;
+    }
+    .actus > div{
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        margin: 10px;
+        height: 250px;
+        width: 95%;
+        background-color: rgb(233, 233, 233);
+        border-radius: 18px;
+    }
+    .actus > div > img{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top:10%;
+        left:10%;
+    }
+    .actus > div >a{
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+        color: green;
+        border: none;
+        top:10%;
+        text-align: right;
+        float: right;
+    }
+    .act{
+        position: absolute;
+        right: 20%;
+    }
+    .boutton{
+        right: 35%;
+    }
+    .boutton:hover{
+        right:33%;
+    }
+    .actus > div:hover{
+        box-shadow:3px 3px 4px 0 rgba(0,0,0,0.5);
+        margin: 10px;
+        height: 252px;
+        width: 97%;
+        -webkit-transition: width 0.5s;
+    
+    }
+    .lesimages {
+        flex-direction: column;
+    }
+    .lesimages > div{
+        width: 100%;
+    }
+    header > div > a{
+        margin-right: 8%;
+    }
+}
+@media (min-width: 1034px){
+    .footerl1{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+    footer>div>div{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .imgfooter{
+        margin: 0px  2px 0px 2px ;
+    }
+    .ligne {
+        border-left: 2px solid white;
+        display: inline-block;
+        height: 130px;
+        margin: 0 20px;
+    }
+    .credit{
+        text-align: center;
+    }
+    .actus > div{
+        display:flex;
+        flex-direction: column;
+        position: relative;
+        margin: 10px;
+        height: 350px;
+        width: 25%;
+        background-color: rgb(233, 233, 233);
+        border-radius: 18px;
+    }
+    .actus{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .actus > div:hover{
+        box-shadow:3px 3px 4px 0 rgba(0,0,0,0.5);
+        margin: 10px;
+        height: 354px;
+        width: 26%;
+        -webkit-transition: width 0.5s;
+    
+    }
+    .actus > div > img{
+        width: 70%;
+        position: absolute;
+        top:5%;
+        right:15%;
+    }
+    .actus > div >a:hover{
+        color: darkgreen;
+    }
+}
+@media (max-width: 700px){
 }
