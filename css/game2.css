@@ -52,3 +52,7 @@ input:checked + label>img{
 #pausse{
     display: none;
 }
+header a{
+    text-decoration: none;
+    color: white;
+}
