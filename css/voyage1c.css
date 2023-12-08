@@ -60,7 +60,12 @@ right:  0px;
     height: 50%;
     width: 25%;
 }
-
+#Mbappé{
+   position: fixed;
+    right: 0;
+    height: 50%;
+    width: 25%;
+}
 /* effet machine à écrire + animation CSS (SPECIAL) */
 /*
 .animate-text span {

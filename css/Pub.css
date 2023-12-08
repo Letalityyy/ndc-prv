@@ -1,0 +1,266 @@
+header {
+    background-color: #dbdbdb; /* Gris par défaut */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.5s ease; /* Transition de couleur en douceur */
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cecece; /* Couleur de fond verte */
+    border-radius: 5px;
+    margin-left: 35px;
+    transition: background-color 0.3s ease; /* Transition fluide de la couleur de fond */
+}
+
+.button:hover {
+    background-color: #006600; /* Couleur de fond verte plus foncée au survol */
+}
+
+.lign{
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    flex: 1;
+}
+.container {
+    max-width: 1200px; /* Ajustez selon vos besoins */
+    margin: 0 auto; /* Centre le contenu dans la page */
+    overflow: hidden; /* Clearfix pour contenir les images flottantes */
+}
+
+.left-image {
+    float: left;
+    margin-right: 20px; /* Ajoutez une marge entre les images si nécessaire */
+    margin-left: 100px;
+}
+
+.textLeft{
+    margin-right:500px;
+    text-align: justify;
+}
+
+.textRight{
+    margin-left: 500px;
+    text-align: justify;
+    background-color: lightblue;
+}
+
+#imageMid{
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+}
+
+.right-image {
+    float: right;
+    margin-right:100px;
+
+}
+
+h2{
+    text-align: center;
+    padding: 20px
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-left:120px;
+    margin-right: 120px;
+    background-color: #f1f1f1;
+}
+
+.enLigne{
+    display: flex;
+    flex-direction: row;
+}
+
+.divh1{
+    padding:20px;
+    color: #000000;
+    text-align:center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+div p {
+    padding:20px;
+    border-radius:5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display:flex;
+    background-color: #cecece;
+}
+
+.divp{
+    padding:20px;
+    border-radius:5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display:flex;
+}
+
+.img{
+    border-radius:5px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 55%;
+    width: 35%;
+}
+
+.imgStats{
+    border-radius:5px;
+    height: 500px;
+    width: 850px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    padding:30px;
+}
+
+
+#AffichePub{
+    border-radius:5px;
+    height: 55%;
+    width: 35%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    padding:30px;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+html {
+    background: #F2F2F2;
+}
+
+.logo-holder {
+    background: #f2f2f2;
+    width: 180px;
+    height: 220px;
+    position: relative;
+    float:left;
+    margin-right:20px;
+}
+
+.bg {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background: url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png) center 0px no-repeat ;
+    -webkit-filter: drop-shadow(0px 6px 25px rgba(0,0,0,0.5));
+}
+
+.bar {
+    position: relative;
+    height: 8px;
+    background: #6a6a6a;
+    width:  0%;
+    top: 0px;
+    left: 18px;
+    margin-top: 8px;
+    box-shadow: 0 0 3px rgba(192,192,192,0.9);
+    animation: fill 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill1 {
+    animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill2 {
+    animation:  fill-2 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill3 {
+    animation:  fill-3 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill4 {
+    animation:  fill-4 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill5 {
+    animation:  fill-5 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill6 {
+    animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+
+@keyframes fill {
+    0%   { width: 0; }
+    33%  { width: 30px;}
+    66%  { width: 10px;}
+    100% { width: 105px; }
+}
+
+@keyframes fill-1 {
+    0%   { width: 0; }
+    33%  { width: 50px;}
+    66%  { width: 20px;}
+    100% { width: 130px; }
+}
+
+@keyframes fill-2 {
+    0%   { width: 0; }
+    33%  { width: 90px;}
+    66%  { width: 70px;}
+    100% { width: 136px; }
+}
+
+@keyframes fill-3 {
+    0%   { width: 0; }
+    33%  { width: 50px;}
+    66%  { width: 24px;}
+    100% { width: 109px; }
+}
+
+@keyframes fill-4 {
+    0%   { width: 0; }
+    33%  { width: 98px;}
+    66%  { width: 34px;}
+    100% { width: 99px; }
+}
+
+@keyframes fill-5 {
+    0%   { width: 0; }
+    33%  { width: 30px;}
+    66%  { width: 10px;}
+    100% { width: 148px; }
+}
+
+
+@keyframes fill-6 {
+    0%   { width: 0; }
+    33%  { width: 48px;}
+    66%  { width: 22px;}
+    100% { width: 140px; }
+}
+
+@keyframes colors {
+    0% { background-color: #5a5a5a;}
+    50% { background-color: #3a3;}
+    100% { background-color: #ff0000;}
+}
