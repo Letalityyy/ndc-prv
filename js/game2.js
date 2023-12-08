@@ -16,11 +16,15 @@ function checkAndRedirect() {
     const V2 = document.getElementById('V2');
     const V3 = document.getElementById('V3');
     const V6 = document.getElementById('V6');
-            if (V2.checked && V3.checked && V6.checked) {
+    const V1 = document.getElementById('V1');
+    const V4 = document.getElementById('V4');
+    const V5 = document.getElementById('V5');
+            if (V2.checked && V3.checked && V6.checked && !V1.checked && !V4.checked && !V6.checked) {
                 // Redirigez l'utilisateur vers une nouvelle page
                 window.location.href = 'transifin.html';
             } else {
                 // Rechargez la page actuelle
+                alert("Mauvaisse reponse");
                 location.reload();
             }
 }

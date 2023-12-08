@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/fin.css">
+    <script src="js/fin.js"></script>
     <title>Felicitation</title>
 </head>
 
@@ -13,8 +14,11 @@
     <header>
 
         <nav class="enLigne ">
+            <div>
+                <input type="range" id="volume" name="volume" min="20" max="40" oninput="updateTextSize(this.value)"/>
+                <label for="volume">Taille texte</label>
+            </div>
             <ul class="enLigne ">
-
                 <li> <a href="">accueil </a></li>
                 <li><a href="">enigme n°1 </a></li>
                 <li><a href="">enigme n°2 </a></li>
