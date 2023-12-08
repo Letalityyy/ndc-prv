@@ -268,7 +268,7 @@ iframe{
         flex-direction: column;
         position: relative;
         margin: 10px;
-        height: 450px;
+        height: 350px;
         width: 25%;
         background-color: rgb(233, 233, 233);
         border-radius: 18px;
@@ -281,7 +281,7 @@ iframe{
     .actus > div:hover{
         box-shadow:3px 3px 4px 0 rgba(0,0,0,0.5);
         margin: 10px;
-        height: 454px;
+        height: 354px;
         width: 26%;
         -webkit-transition: width 0.5s;
     
