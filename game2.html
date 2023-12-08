@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/game2.css">
+  <script src="./js/game2.js"></script>
   <title>Title</title>
 </head>
 <body>
@@ -14,16 +15,15 @@
   <h1>jeux 1</h1>
 <article id="jeux1">
 
-  <div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="100" id="lect">
+  <div class="svg-container" onclick="toggleSVG()">
+  <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="100" id="lect">
     <!-- Fond vert en forme de cercle -->
     <circle cx="50" cy="50" r="50" fill="#095228" />
 
     <!-- Symbole de lecture (triangle) -->
     <polygon points="35,25 35,75 75,50" fill="#ffffff" />
   </svg>
-
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="100" id="pausse">
+  <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="100" id="pausse">
     <!-- Fond vert en forme de cercle -->
     <circle cx="50" cy="50" r="50" fill="#095228" />
 
@@ -44,30 +44,33 @@
 </article>
     <article id="reponssssse">
       <div>
-      <input type="checkbox" id="1" name="scales" checked />
+      <input type="checkbox" id="1" name="scales"/>
       <label for="1"><img src="./images/avion.png"></label>
   </div>
       <div>
-        <input type="checkbox" id="2" name="scales" checked />
-        <label for="2"><img src="./images/bus.png"></label>
+        <input type="checkbox" id="V2" name="scales"/>
+        <label for="V2"><img src="./images/bus.png"></label>
       </div>
       <div>
-        <input type="checkbox" id="3" name="scales" checked />
-        <label for="3"><img src="./images/train.png"></label>
+        <input type="checkbox" id="V3" name="scales"/>
+        <label for="V3"><img src="./images/train.png"></label>
       </div>
       <div>
-        <input type="checkbox" id="4" name="scales" checked />
+        <input type="checkbox" id="4" name="scales"/>
         <label for="4"><img src="./images/voiture.png"></label>
       </div>
       <div>
-        <input type="checkbox" id="5" name="scales" checked />
+        <input type="checkbox" id="5" name="scales"/>
         <label for="5"><img src="./images/fusée.png"></label>
       </div>
       <div>
-        <input type="checkbox" id="6" name="scales" checked />
-        <label for="6"><img src="./images/pied.png"></label>
+        <input type="checkbox" id="V6" name="scales"/>
+        <label for="V6"><img src="./images/pied.png"></label>
       </div>
     </article>
+    <form>
+      <input type="button" value="Validée" onclick="checkAndRedirect()"/>
+    </form>
   </div>
 </body>
 </html>
