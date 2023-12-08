@@ -1,6 +1,6 @@
 nav {
     background-color: green;
-    padding: 1.4vw;
+    padding: 1.0vw;
     font-size: 1.4vw;
 }
 
@@ -14,7 +14,7 @@ li {
 }
 
 ul {
-    margin-left: 40%;
+    margin-left: 20%;
 }
 
 .enLigne {
@@ -51,7 +51,9 @@ article {
 }
 
 img {
+
     width: 25%;
+    max-height: 40%;
 }
 
 .background {
@@ -126,6 +128,7 @@ footer a:hover {
 footer p {
     font-size: 0.7vw;
 }
+
 
 @media screen and (max-width: 800px) {
     body {
